@@ -1,18 +1,27 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        ::::::::            */
-/*   ft_isalnum.c                                       :+:    :+:            */
+/*   ft_free_array.c                                    :+:    :+:            */
 /*                                                     +:+                    */
 /*   By: nsterk <nsterk@student.codam.nl>             +#+                     */
 /*                                                   +#+                      */
-/*   Created: 2020/10/22 15:50:36 by nsterk        #+#    #+#                 */
-/*   Updated: 2021/03/03 01:36:08 by nsterk        ########   odam.nl         */
+/*   Created: 2021/03/22 15:44:37 by nsterk        #+#    #+#                 */
+/*   Updated: 2021/03/22 16:16:55 by nsterk        ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	ft_isalnum(int c)
+int	ft_free_array(char **str)
 {
-	return (ft_isdigit(c) || ft_isalpha(c));
+	int	i;
+
+	i = 0;
+	while (str[i])
+	{
+		free(str);
+		i++;
+	}
+	free(str[i]);
+	return (1);
 }

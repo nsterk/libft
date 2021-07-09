@@ -6,13 +6,13 @@
 /*   By: nsterk <nsterk@student.codam.nl>             +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2020/10/30 19:00:03 by nsterk        #+#    #+#                 */
-/*   Updated: 2020/11/13 01:18:20 by nsterk        ########   odam.nl         */
+/*   Updated: 2021/03/03 01:40:39 by nsterk        ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-static char		**free_split(char **rstr, int len)
+static char	**free_split(char **rstr, int len)
 {
 	while (len)
 	{
@@ -23,10 +23,10 @@ static char		**free_split(char **rstr, int len)
 	return (NULL);
 }
 
-static char		**make_substrs(char **rstr, char const *s, char c, size_t len)
+static char	**make_substrs(char **rstr, char const *s, char c, size_t len)
 {
-	size_t i;
-	size_t j;
+	size_t	i;
+	size_t	j;
 
 	j = 0;
 	while (*s == (unsigned char)c)
@@ -51,8 +51,8 @@ static char		**make_substrs(char **rstr, char const *s, char c, size_t len)
 
 static size_t	find_amount(char const *s, char c)
 {
-	size_t i;
-	size_t len;
+	size_t	i;
+	size_t	len;
 
 	i = 0;
 	len = 0;
@@ -65,7 +65,7 @@ static size_t	find_amount(char const *s, char c)
 	return (len);
 }
 
-char			**ft_split(char const *s, char c)
+char	**ft_split(char const *s, char c)
 {
 	char	**rstr;
 	size_t	len;
@@ -73,7 +73,7 @@ char			**ft_split(char const *s, char c)
 	if (!s)
 		return (NULL);
 	len = find_amount(s, c);
-	rstr = (char **)malloc(sizeof(char*) * (len + 1));
+	rstr = (char **)malloc(sizeof(char *) * (len + 1));
 	if (!rstr)
 		return (NULL);
 	rstr = make_substrs(rstr, s, c, len);

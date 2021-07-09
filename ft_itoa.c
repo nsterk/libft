@@ -6,15 +6,15 @@
 /*   By: nsterk <nsterk@student.codam.nl>             +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2020/10/29 11:03:04 by nsterk        #+#    #+#                 */
-/*   Updated: 2020/11/02 22:58:08 by nsterk        ########   odam.nl         */
+/*   Updated: 2021/03/03 01:35:34 by nsterk        ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-static int		ft_itoalen(int n)
+static int	ft_itoalen(int n)
 {
-	int len;
+	int	len;
 
 	len = 0;
 	if (n == 0)
@@ -29,14 +29,14 @@ static int		ft_itoalen(int n)
 	return (len);
 }
 
-static int		ft_topos(char *s, int n)
+static int	ft_topos(char *s, int n)
 {
 	s[0] = '-';
 	n *= -1;
 	return (n);
 }
 
-static char		*atoi_minint(char *s)
+static char	*atoi_minint(char *s)
 {
 	char	*sptr;
 
@@ -56,7 +56,7 @@ static char		*atoi_minint(char *s)
 	return (sptr);
 }
 
-char			*ft_itoa(int n)
+char	*ft_itoa(int n)
 {
 	int		len;
 	char	*rstr;

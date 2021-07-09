@@ -6,13 +6,13 @@
 /*   By: nsterk <nsterk@student.codam.nl>             +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2020/10/28 19:18:27 by nsterk        #+#    #+#                 */
-/*   Updated: 2020/11/14 23:02:35 by nsterk        ########   odam.nl         */
+/*   Updated: 2021/03/03 01:39:23 by nsterk        ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int		ft_memcmp(const void *s1, const void *s2, size_t n)
+int	ft_memcmp(const void *s1, const void *s2, size_t n)
 {
 	char	*s1ptr;
 	char	*s2ptr;

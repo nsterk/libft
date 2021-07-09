@@ -1,18 +1,21 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        ::::::::            */
-/*   ft_isalnum.c                                       :+:    :+:            */
+/*   ft_skipspace.c                                     :+:    :+:            */
 /*                                                     +:+                    */
 /*   By: nsterk <nsterk@student.codam.nl>             +#+                     */
 /*                                                   +#+                      */
-/*   Created: 2020/10/22 15:50:36 by nsterk        #+#    #+#                 */
-/*   Updated: 2021/03/03 01:36:08 by nsterk        ########   odam.nl         */
+/*   Created: 2021/03/02 18:59:59 by nsterk        #+#    #+#                 */
+/*   Updated: 2021/03/03 07:40:54 by nsterk        ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	ft_isalnum(int c)
+const char	*ft_skipspace(const char *str)
 {
-	return (ft_isdigit(c) || ft_isalpha(c));
+	while (*str == '\t' || *str == '\n' || *str == '\f'
+		|| *str == '\r' || *str == '\v' || *str == ' ')
+		str++;
+	return (str);
 }

@@ -6,13 +6,13 @@
 /*   By: nsterk <marvin@codam.nl>                     +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2020/09/21 17:08:30 by nsterk        #+#    #+#                 */
-/*   Updated: 2020/11/05 14:32:32 by nsterk        ########   odam.nl         */
+/*   Updated: 2021/03/03 01:41:14 by nsterk        ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
-int		ft_strcmp(char *s1, char *s2)
+int	ft_strcmp(char *s1, char *s2)
 {
-	int i;
+	int	i;
 
 	i = 0;
 	while (s1[i] != '\0' || s2[i] != '\0')

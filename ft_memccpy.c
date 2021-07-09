@@ -6,7 +6,7 @@
 /*   By: nsterk <nsterk@student.codam.nl>             +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2020/10/27 14:50:24 by nsterk        #+#    #+#                 */
-/*   Updated: 2020/11/05 14:13:00 by nsterk        ########   odam.nl         */
+/*   Updated: 2021/03/03 01:38:59 by nsterk        ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,8 +18,8 @@ void	*ft_memccpy(void *dst, const void *src, int c, size_t n)
 	unsigned char	*sptr;
 	size_t			i;
 
-	dptr = (unsigned char*)dst;
-	sptr = (unsigned char*)src;
+	dptr = (unsigned char *)dst;
+	sptr = (unsigned char *)src;
 	i = 0;
 	while (i < n)
 	{

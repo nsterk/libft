@@ -6,7 +6,7 @@
 /*   By: nsterk <nsterk@student.codam.nl>             +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2020/10/28 22:36:50 by nsterk        #+#    #+#                 */
-/*   Updated: 2020/11/05 14:29:37 by nsterk        ########   odam.nl         */
+/*   Updated: 2021/03/03 01:35:59 by nsterk        ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 void	*ft_calloc(size_t count, size_t size)
 {
-	void *ptr;
+	void	*ptr;
 
 	ptr = malloc(size * count);
 	if (!ptr)

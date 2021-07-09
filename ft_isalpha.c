@@ -6,11 +6,11 @@
 /*   By: nsterk <marvin@codam.nl>                     +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2020/09/18 16:07:50 by nsterk        #+#    #+#                 */
-/*   Updated: 2020/11/05 14:29:55 by nsterk        ########   odam.nl         */
+/*   Updated: 2021/03/03 01:36:15 by nsterk        ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
-int		ft_isalpha(int c)
+int	ft_isalpha(int c)
 {
 	if (c >= 'A' && c <= 'Z')
 		return (1);

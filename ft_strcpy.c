@@ -6,13 +6,13 @@
 /*   By: nsterk <marvin@codam.nl>                     +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2020/09/22 09:36:19 by nsterk        #+#    #+#                 */
-/*   Updated: 2020/11/02 19:18:13 by nsterk        ########   odam.nl         */
+/*   Updated: 2021/03/03 01:41:25 by nsterk        ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
 char	*ft_strcpy(char *dest, char *src)
 {
-	int i;
+	int	i;
 
 	i = 0;
 	while (src[i] != '\0')

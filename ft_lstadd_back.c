@@ -6,7 +6,7 @@
 /*   By: nsterk <nsterk@student.codam.nl>             +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2020/11/03 15:35:22 by nsterk        #+#    #+#                 */
-/*   Updated: 2020/11/14 23:00:08 by nsterk        ########   odam.nl         */
+/*   Updated: 2021/03/03 01:36:48 by nsterk        ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 void	ft_lstadd_back(t_list **lst, t_list *new)
 {
-	t_list *current;
+	t_list	*current;
 
 	if (!lst)
 		return ;

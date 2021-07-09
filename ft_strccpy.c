@@ -1,34 +1,26 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        ::::::::            */
-/*   ft_strnstr.c                                       :+:    :+:            */
+/*   ft_strccpy.c                                       :+:    :+:            */
 /*                                                     +:+                    */
 /*   By: nsterk <marvin@codam.nl>                     +#+                     */
 /*                                                   +#+                      */
-/*   Created: 2020/09/22 16:42:41 by nsterk        #+#    #+#                 */
-/*   Updated: 2021/03/03 01:45:21 by nsterk        ########   odam.nl         */
+/*   Created: 2020/09/22 09:36:19 by nsterk        #+#    #+#                 */
+/*   Updated: 2021/03/24 16:24:25 by nsterk        ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
-
-char	*ft_strnstr(const char *haystack, const char *needle, size_t len)
+char	*ft_strccpy(char *dest, char *src, char c)
 {
-	size_t	i;
-	size_t	needle_len;
+	int	i;
 
-	needle_len = ft_strlen(needle);
-	if (*needle == 0)
-		return ((char *)haystack);
-	if (*haystack == 0 || ft_strlen(needle) > len)
-		return (NULL);
 	i = 0;
-	while (*haystack && i <= (len - needle_len))
+	while (src[i] != '\0')
 	{
-		if (ft_strncmp(haystack, needle, needle_len) == 0)
-			return ((char *)haystack);
+		if (src[i] != c)
+			dest[i] = src[i];
 		i++;
-		haystack++;
 	}
-	return (NULL);
+	dest[i] = '\0';
+	return (dest);
 }

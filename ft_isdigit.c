@@ -6,11 +6,11 @@
 /*   By: nsterk <marvin@codam.nl>                     +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2020/09/20 17:56:56 by nsterk        #+#    #+#                 */
-/*   Updated: 2020/11/05 13:06:49 by nsterk        ########   odam.nl         */
+/*   Updated: 2021/03/03 01:36:28 by nsterk        ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
-int		ft_isdigit(int c)
+int	ft_isdigit(int c)
 {
 	return (c >= '0' && c <= '9');
 }

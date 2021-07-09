@@ -6,11 +6,11 @@
 /*   By: nsterk <marvin@codam.nl>                     +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2020/09/20 18:16:05 by nsterk        #+#    #+#                 */
-/*   Updated: 2020/11/12 22:03:24 by nsterk        ########   odam.nl         */
+/*   Updated: 2021/03/03 01:36:35 by nsterk        ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
-int		ft_isprint(int c)
+int	ft_isprint(int c)
 {
 	return (c >= 32 && c <= 126);
 }
