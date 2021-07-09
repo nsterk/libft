@@ -6,7 +6,7 @@
 #    By: nsterk <nsterk@student.codam.nl>             +#+                      #
 #                                                    +#+                       #
 #    Created: 2020/10/27 11:29:07 by nsterk        #+#    #+#                  #
-#    Updated: 2021/07/08 13:28:36 by naomisterk    ########   odam.nl          #
+#    Updated: 2021/07/09 10:54:49 by nsterk        ########   odam.nl          #
 #                                                                              #
 # **************************************************************************** #
 
@@ -46,16 +46,17 @@ $(NAME):	$(OBJ_FILES)
 		$(OPTIONS) $(NAME) $(OBJ_FILES)
 
 %.o: %.c	$(HEADER)
-		$(CC) -c $(CFLAGS) -o $@ $<
+	@printf "Creating Libft objects... %-33.33s\r" $@
+	@$(CC) -c $(CFLAGS) -o $@ $<
 
 bonus:
-		$(MAKE) WITH_BONUS=1 all
+	@ $(MAKE) WITH_BONUS=1 all
 
 clean:
-		$(RM) $(REG_OBJS) ${BONUS_OBJS}
+	@ $(RM) $(REG_OBJS) ${BONUS_OBJS}
 
 fclean: clean
-		$(RM) $(NAME)
+	@ $(RM) $(NAME)
 
 re: fclean all
 
